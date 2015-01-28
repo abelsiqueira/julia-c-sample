@@ -1,0 +1,8 @@
+language: julia
+before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get install -y julia
+script: make
+notifications:
+  email:
+    on_success: always
