@@ -13,7 +13,7 @@ all: $(EXEC)
 	done
 
 %.tst: %.c $(LIB)
-	$(CC) -o $@ -L. -lcjulia $< $(CFLAGS)
+	$(CC) -o $@ -L. $< -lcjulia $(CFLAGS)
 
 $(LIB): $(OBJS)
 	$(CC) -shared -o $(LIB) $(OBJS)
