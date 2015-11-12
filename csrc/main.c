@@ -15,7 +15,7 @@ int main () {
     y[i] = 2.0*(rand()%1000)/1000.0-1.0;
   }
 
-  s = dot(n, x, y);
+  s = dot(&n, x, y);
   printf("<x,y> = %lf\n", s);
 
   return 0;
